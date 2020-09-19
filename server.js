@@ -7,6 +7,9 @@ const app = express();
 // if you are using postgres, uncomment this line
 // const pool = require('./db/pgconfig');
 
+// if you are using mysql, uncomment this line
+// const db = require('./db/mysqlconfig');
+
 app.use((req,res,next) => {
   res.status(404).send('That route does not exist');
 });
